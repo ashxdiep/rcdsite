@@ -1,0 +1,186 @@
+.border-box{
+  width: 80%;
+  margin: auto;
+  font-family: 'Electrolize', sans-serif;
+  /* font-family: 'Abel', sans-serif; */
+  font-size: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/* Container for the buttons */
+.buttons{
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  /* align-items: stretch; */
+}
+
+.home:hover, .codeDev:hover, .quality:hover, .employment:hover, .regis:hover, .contact:hover{
+  background-color: white!important;
+  color: #696969!important;
+  border-color: #f5f5f5!important;
+}
+
+.unactive:hover {
+  color: #696969;
+  background-color: white;
+  text-decoration: none;
+}
+
+.active{
+  color: #696969;
+  text-decoration: none;
+}
+.unactive{
+  color: #696969;
+  text-decoration: none;
+}
+
+.item{
+  border-style: ridge;
+  border-color: #989898;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+
+  background-color: #696969;
+  color: white;
+  box-shadow: 5px 10px 18px #888888;
+
+}
+
+.home{
+  justify-self: left;
+}
+
+.quality{
+  justify-self: left;
+}
+
+.employment, .contact{
+  justify-self: right;
+}
+
+/* content styling  */
+.content{
+  padding-top: 6%;
+  margin-bottom: 3%;
+}
+
+.parag{
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+ul{
+  margin: 4px;
+}
+
+@media only screen and (max-width: 980px) and (min-width: 795px) {
+  .regis {
+    width: 251px !important;
+  }
+}
+
+@media only screen and (max-width: 795px) and (min-width: 710px){
+  .item{
+    text-align: center;
+    vertical-align: middle;
+  }
+  .home, .employment, .codeDev, .contact, .quality{
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 710px) and (min-width: 700px){
+  .codeDev, .quality{
+    text-align: center;
+  }
+  .home, .employment, .contact{
+    height: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px ) and (min-width: 620px){
+  .contact,.home, .employment{
+    height: 84%;
+  }
+  .codeDev, .quality, .regis{
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 618px) and (min-width: 540px) {
+  .home, .employment, .contact {
+    height: 73%;
+  }
+
+  .quality{
+    width: 120px;
+    text-align: center;
+  }
+
+  .regis{
+    text-align: center;
+  }
+
+  .codeDev, .quality{
+    text-align: center;
+    height: 87%;
+  }
+}
+
+@media only screen and (max-width: 540px) and (min-width: 480px){
+  .contact{
+    text-align: center;
+    height: 85%;
+  }
+  .home, .employment{
+    height: 70%;
+  }
+
+  .codeDev, .quality{
+    height: 89%;
+    text-align: center;
+  }
+  .regis{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+
+  .employment{
+    justify-self: right;
+    height: 83%;
+  }
+
+  .regis, .codeDev{
+    text-align: center;
+  }
+  .contact{
+    justify-self: left;
+  }
+
+  .quality{
+    justify-self: right;
+    text-align: center;
+  }
+
+  .home{
+    height: 80%;
+  }
+}
