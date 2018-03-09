@@ -166,6 +166,7 @@ ul{
   .employment{
     justify-self: right;
     height: 83%;
+    text-align: center;
   }
 
   .regis, .codeDev{
@@ -173,6 +174,7 @@ ul{
   }
   .contact{
     justify-self: left;
+    text-align: center;
   }
 
   .quality{
@@ -182,5 +184,6 @@ ul{
 
   .home{
     height: 80%;
+    text-align: center;
   }
 }
